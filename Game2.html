@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Game2</title>
+
+	<link href="main.css" rel="stylesheet">
+	<link rel="stylesheet" href="animate.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="javascript/javascript.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="wow.js"></script>
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<!--Font-->
+	<!--Bootstrsp-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!--Bootstrsp-->
+
+
+</head>
+
+<body>
+	<header class="home">
+		<a class="navbar-brand" href="JIAYI-WANG.html">WaN9JiAYI</a>
+	</header>
+
+	<div class="bar">
+		<a href="javascript:void(0):">
+			<i class="fa fa-bars"></i></a>
+		</div>
+		<nav class="nav-bar" id="nav-bar">
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" href="Game1.html">Robber Go Go Go!</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Game2.html">Let's Make Burgers!</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="work.html">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="styleGuide.html">Style Guide</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="citation.html">Citation</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="burger">
+			<div>
+				<img src="images/burger.png" alt="burgerImg">
+			</div>
+		</div>
+
+		<div class="center-text">
+			<p class="animated bounceInUp">Let's Make</p>
+			<p class="animated bounceInUp">Burgers!</p>
+		</div>
+
+			<div class="g2-p1">
+				<h2 data-wow-delay="0s" class="g-h2 section wow bounceInDown">How I built the game?</h2>
+				<div class="wow bounceInRight duration3s" data-wow-delay="0.5s">
+				<ul style="list-style-type:square;">
+					<li>Firstly, I did brainstorm. I chose one from them as my design direction.</li>
+					<li>
+					Secondly, I draw the elements in Adobe Illustrator
+					<br><img src="images/ai-elements.png" alt="ai">
+					</li>
+					<li>
+					Thirdly, I wrote the coding using Java and test continuously.
+					<br><img src="images/java.png" alt="java">
+					</li>
+					<li>
+					Finally, I added the background sounds to complete the game running.
+					<br><img src="images/collection.png" alt="collection">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="g2-p2">
+			<h2 class="g-h2">Final Vision in Video</h2>
+			<div class="video">
+				<!-- <video controls="controls" autoplay>
+					<source src="video/burger.mov" video="web/mov" id="burger-mov">
+
+					</video> -->
+					<video src="video/burger.mov" controls>
+			</video>
+				</div>
+
+				<div class="description-g2">
+					<p>This project I would like to describe is a game I designed for IAT265. The game is call Let's Make Buegers! This game is designed for the kitchen lovers and it includes all the steps to make a bueger. The instruction is shown on the black board and the user need to follow the instruction to complete a burger.Compare with the game I designed for IAT167, this time I used the Java to run the whole game.</p>
+				</div>
+			</div>
+
+
+
+			<script>
+
+				wow = new WOW();
+				wow.init();
+
+				displayMenu = function(){
+					if (!display){
+						$("nav").animate({"left":"0%"}, 1000)
+					}else{
+						$("nav").animate({"left":"-150%"}, 1000)
+					}
+					display = !display
+				}
+				display = false
+				setup = function() {
+					$(".bar").click(displayMenu)
+				}
+				$(document).ready(setup)
+
+			</script>
+
+			<footer>
+				<div class="follow">
+					<p>follow me on</p>
+				</div>
+				<div class="social">
+					<a href="https://www.instagram.com/jiayi.wan9/" class="fa fa-instagram" id="ins"></a>
+					<a href="https://www.facebook.com/jiayi.wang.14661" class="fa fa-facebook"></a>
+					<a href="https://www.youtube.com/channel/UCF9xL2mEAT-bKFkYN9C1pgg?view_as=subscriber" class="fa fa-youtube"></a>
+				</div>
+
+				<div class="copyright">
+					<p>Copyright &copy;2023 Jiayi. All rights reserved.<p>
+					</div>
+				</footer>
+			</body>
+			</html>

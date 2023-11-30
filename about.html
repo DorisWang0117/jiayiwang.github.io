@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>About</title>
+
+	<link href="main.css" rel="stylesheet">
+	<link rel="stylesheet" href="animate.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="javascript/javascript.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<!--Font-->
+	<!--Bootstrsp-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!--Bootstrsp-->
+
+
+</head>
+
+<body class="about-body">
+	<header class="home">
+		<a href="JIAYI-WANG.html" class="navbar-brand">WaN9JiAYI</a>
+	</header>
+
+	<div class="bar">
+		<a href="javascript:void(0):">
+			<i class="fa fa-bars"></i></a>
+		</div>
+		<nav class="nav-bar" id="nav-bar">
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" href="Game1.html">Robber Go Go Go!</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Game2.html">Let's Making Burger!</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="work.html">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="styleGuide.html">Style Guide</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="citation.html">Citation</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="center-text">
+			<div class="about-text">
+				<p class="animated rollIn" id="hello">Hello!</p>
+				<p class="animated rollIn">I AM</p>
+			</div>
+			<p class="animated rollIn">Website Designer</p>
+		</div>
+		<!-- </div> -->
+
+		
+		<div class="self-body">
+			<div class="self">
+				<img class="wow fadeInLeft duration3s" data-wow-delay="0.5s" src="images/me.jpeg" alt="self">
+			</div>
+
+			<div class="introduce wow bounceInRight duration3s" id="typewriter" data-wow-delay="0.5s">
+				<p>Hello! I'm Jiayi Wang. 
+					I graduated at Simon Fraser University with Interactive Art & Technology Major. 
+					"Always creating the funny things" is my motto. I used to be a Website Designer 
+					and I like to develope unique and interesting websites. HTML/CSS/JavaScript 
+					support me to build the base of a website. 
+					Adobe Illustrator & Photoshop help me to polish my charactors. 
+					After graduation, I worked as a General Manager at The Fish Man Restaurant until now.
+					I learned a lot of social knowledge from this job and benefited a lot </p>
+			</div>
+		</div>
+
+
+		<script src="wow.js"></script>
+		<script>
+			wow = new WOW();
+			wow.init();
+
+			displayMenu = function(){
+				if (!display){
+					$("nav").animate({"left":"0%"}, 1000)
+				}else{
+					$("nav").animate({"left":"-150%"}, 1000)
+				}
+				display = !display
+			}
+			display = false
+			setup = function() {
+				$(".bar").click(displayMenu)
+			}
+			$(document).ready(setup)
+
+			var aText = new Array(
+				"Hello! I'm Jiayi Wang. I graduated at Simon Fraser University with Interactive Art & Technology Major.  \"Always creating the funny things\" is my motto. I'm a Website Designer and I like to develope unique and interesting websites. HTML/CSS/JavaScript support me to build the base of a website. Adobe Illustrator & Photoshop help me to polish my charactors.I master the Computer skills(Adobe llustrator/Photoshop/After Effect etc.) proficiently. Then, I worked as a general Manager of a famous restaurant at Vancouver for two years. I acquried the Communication/Management/Organizational/Leadership/Customer service/Interpersonal/Problem-solving skills when I working as a general manager. " 
+				);
+   var iSpeed = 100; // time delay of print out
+   var iIndex = 0; // start printing array at this posision
+   var iArrLength = aText[0].length; // the length of the text array
+   var iScrollAt = 50; // start scrolling up at this many lines
+
+   var iTextPos = 0; // initialise text position
+   var sContents = ''; // initialise contents variable
+   var iRow; // initialise current row
+
+   function typewriter()
+   {
+   	sContents =  ' ';
+   	iRow = Math.max(0, iIndex-iScrollAt);
+   	var destination = document.querySelector("#typewriter>p");
+
+   	while ( iRow < iIndex ) {
+   		sContents += aText[iRow++] + '<br />';
+   	}
+   	destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+   	if ( iTextPos++ == iArrLength ) {
+   		iTextPos = 0;
+   		iIndex++;
+   		if ( iIndex != aText.length ) {
+   			iArrLength = aText[iIndex].length;
+   			setTimeout("typewriter()", 50);
+   		}
+   	} else {
+   		setTimeout("typewriter()", iSpeed);
+   	}
+   }
+
+   typewriter();
+</script>
+
+<footer>
+	<div class="follow">
+		<p>follow me on</p>
+	</div>
+	<div class="social">
+		<a href="https://www.instagram.com/jiayi.wan9/" class="fa fa-instagram" id="ins"></a>
+		<a href="https://www.facebook.com/jiayi.wang.14661" class="fa fa-facebook"></a>
+		<a href="https://www.youtube.com/channel/UCF9xL2mEAT-bKFkYN9C1pgg?view_as=subscriber" class="fa fa-youtube"></a>
+	</div>
+
+	<div class="copyright">
+		<p>Copyright &copy;2023 Jiayi. All rights reserved.<p>
+		</div>
+	</footer>
+</body>
+</html>

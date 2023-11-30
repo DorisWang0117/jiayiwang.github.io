@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>WaN9JiAYI</title>
+
+	<link href="main.css" rel="stylesheet">
+	<link rel="stylesheet" href="animate.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="javascript/javascript.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<!--Font-->
+	<!--Bootstrsp-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!--Bootstrsp-->
+
+
+</head>
+
+<body>
+	<header class="home">
+		<a class="navbar-brand" href="JIAYI-WANG.html">WaN9JiAYI</a>
+	</header>
+
+	<div class="bar">
+		<a href="javascript:void(0):">
+			<i class="fa fa-bars"></i></a>
+		</div>
+		<nav class="nav-bar" id="nav-bar">
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" href="Game1.html">Robber Go Go Go!</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Game2.html">Let's Make Burgers!</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="work.html">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="styleGuide.html">Style Guide</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="citation.html">Citation</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<div class="developer">
+			<div>
+				<img src="images/developer.png" alt="gearImg">
+			</div>
+		</div>
+
+		<div class="center-text">
+			<p class="animated bounce">Design, Coding</p>
+			<p class="animated fadeInRight">Creativity, Fun</p>
+		</div>
+
+
+		<div class="projects">
+			<div class="p1">
+				<div class="p-img">
+					<img src="images/p1-6.png" alt="p1">
+				</div>
+				<div class="p-text">
+					<h2 class="g-h2">Game1: Robber GO GO GO!</h2>
+					<p>Hello! I'm Jiayi Wang. I graduated at Simon Fraser University with Interactive Art & Technology Major. "Always creating the funny things" is my motto. I used to be a Website Designer and I like to develope unique and interesting websites. HTML/CSS/JavaScript support me to build the base of a website. Adobe Illustrator & Photoshop help me to polish my charactors. I master the Computer skills(Adobe llustrator/Photoshop/After Effect etc.) proficiently. Then, I worked as a general Manager of a famous restaurant at Vancouver for two years. I acquried the Communication/Management/Organizational/Leadership/Customer service/Interpersonal/Problem-solving skills when I working as a general manager.  </p>
+					<a href="Game1.html" class="button">Show More Details</a>
+				</div>
+			</div>
+
+			<div class="p2">
+				<div class="p-text">
+					<h2 class="g-h2">Game2: Let's Make Burgers!</h2>
+					<p>Hello! I'm Jiayi Wang. I graduated at Simon Fraser University with Interactive Art & Technology Major. "Always creating the funny things" is my motto. I used to be a Website Designer and I like to develope unique and interesting websites. HTML/CSS/JavaScript support me to build the base of a website. Adobe Illustrator & Photoshop help me to polish my charactors. I master the Computer skills(Adobe llustrator/Photoshop/After Effect etc.) proficiently. Then, I worked as a general Manager of a famous restaurant at Vancouver for two years. I acquried the Communication/Management/Organizational/Leadership/Customer service/Interpersonal/Problem-solving skills when I working as a general manager.  </p>
+					<a href="Game2.html" class="button">Show More Details</a>
+				</div>
+
+				<div class="p-img">
+					<img src="images/p2-6.png" alt="p2">
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+			displayMenu = function(){
+				if (!display){
+					$("nav").animate({"left":"0%"}, 1000)
+				}else{
+					$("nav").animate({"left":"-150%"}, 1000)
+				}
+				display = !display
+			}
+			display = false
+			setup = function() {
+				$(".bar").click(displayMenu)
+			}
+			$(document).ready(setup)
+		</script>
+
+		<footer>
+			<div class="follow">
+				<p>follow me on</p>
+			</div>
+			<div class="social">
+				<a href="https://www.instagram.com/jiayi.wan9/" class="fa fa-instagram" id="ins"></a>
+				<a href="https://www.facebook.com/jiayi.wang.14661" class="fa fa-facebook"></a>
+				<a href="https://www.youtube.com/channel/UCF9xL2mEAT-bKFkYN9C1pgg?view_as=subscriber" class="fa fa-youtube"></a>
+			</div>
+
+
+			<div class="copyright">
+				<p>Copyright &copy;2023 Jiayi. All rights reserved.<p>
+				</div>
+			</footer>
+		</body>
+		</html>
