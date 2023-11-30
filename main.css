@@ -499,6 +499,11 @@ nav a:hover:after{
   margin-left:10vw;
  }
 
+ .work-intro p{
+  margin-left: 300px;
+  margin-right: 300px;
+ }
+
 .fishman-img img{
   width:70%;
 }
